@@ -1,0 +1,102 @@
+jQuery methods
+
+# before, after
+
+$("h1").css("background-color", "yellow")
+
+$("ul").before("<h2>Fruits!!!</h2>")
+
+$("ul").after("<h3>Yum!!!</h3>")
+
+
+# text, html
+
+$("li").text()
+"Banana GoogleAppleMango"
+
+$("li:first").text()
+"Banana Google"
+
+$("p").text()
+"By Zee"
+
+$("p").text("Go Zee")
+
+$("li:last").html()
+"Mango"
+
+$("li:last").html("<li>Pineapple</li>")
+
+$("ul").text()
+"
+        Banana Google
+        Apple
+        Pineapple
+    "
+
+$("ul").html()
+"
+        <li>Banana <a href=\"google.com\">Google</a></li>
+        <li>Apple</li>
+        <li><li>Pineapple</li></li>
+		
+		
+# css(), attr(), val()
+
+$("h1").css(design)
+Object { 0: h1
+, length: 1, prevObject: {…} }
+
+
+$("h1").css()
+Uncaught TypeError: e is undefined
+    jQuery 5
+    <anonymous> debugger eval code:1
+debugger eval code:2:32661
+
+
+$("h1").css("color")
+"rgb(0, 0, 255)"
+
+
+$("h1").css("background-color")
+"rgb(0, 128, 0)"
+
+
+$("h1").css("border")
+"2.4px solid rgb(0, 0, 0)" 
+
+
+$("img").attr("border", "5px solid black")
+Object { 0: img, 1: img, 2: img
+, length: 3, prevObject: {…} }
+
+
+$("#sometext").val()
+"hello"
+
+
+$("#sometext").val("hello again")
+Object { 0: input#sometext
+, length: 1 }
+
+
+$("#sometext").val()
+"hello again"
+
+# ​addClass, removeClass, toggleClass
+
+$("img").removeClass("styleclass")
+Object { 0: img, 1: img, 2: img
+, length: 3, prevObject: {…} }
+
+$("img").addClass("styleclass")
+Object { 0: img.styleclass, 1: img.styleclass, 2: img.styleclass
+, length: 3, prevObject: {…} }
+
+$("img").toggleClass("styleclass")
+Object { 0: img, 1: img, 2: img
+, length: 3, prevObject: {…} }
+
+$("img").toggleClass("styleclass")
+Object { 0: img.styleclass, 1: img.styleclass, 2: img.styleclass, length: 3, prevObject: {…} }
